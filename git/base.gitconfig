@@ -1,0 +1,20 @@
+[color]
+  ui = true
+
+[commit]
+  template = ~/.gittemplate
+
+[core]
+  excludesfile = ~/.gitignore
+
+[mergetool]
+  keepBackup = true
+
+[push]
+  default = current
+
+[include]
+  path = ~/.gitconfig_os
+  path = ~/.gitconfig_local
+  path = ~/.gitaliases
+  path = ~/.gitaliases_local
