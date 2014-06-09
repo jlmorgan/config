@@ -125,7 +125,7 @@ class Installer
         Powerline::FONTS.each do |font_dir|
           Powerline::FONT_EXTENSIONS.each do |ext|
             Dir.glob(source_path(Powerline::FONT_PATH + font_dir) + '/*' + ext).each do |sourcePath|
-              link_absolute(
+              copy_absolute(
                 sourcePath,
                 dest_path(Dest::Powerline::FONT_PATH + File.basename(sourcePath))
               )
