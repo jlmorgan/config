@@ -73,6 +73,7 @@ class Installer
       ignores = [Git::Ignore::ARCHIVES]
 
       if OS.mac?
+        link(Git::ALIASES, Dest::Git::ALIASES)
         link(Git::UNIX, Dest::Git::OS)
         link(Git::BASE, Dest::Git::CONFIG)
         ignores.push(
@@ -84,6 +85,7 @@ class Installer
         )
         merge(ignores, Dest::Git::IGNORE)
       elsif OS.linux?
+        link(Git::ALIASES, Dest::Git::ALIASES)
         link(Git::UNIX, Dest::Git::OS)
         link(Git::BASE, Dest::Git::CONFIG)
         ignores.push(
@@ -92,6 +94,7 @@ class Installer
         )
         merge(ignores, Dest::Git::IGNORE)
       elsif OS.win?
+        link(Git::ALIASES, Dest::Git::ALIASES)
         link(Git::WIN, Dest::Git::OS)
         link(Git::BASE, Dest::Git::CONFIG)
         ignores.push(
