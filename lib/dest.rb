@@ -11,7 +11,7 @@ module Dest
 
   module Git
     CONFIG = '.gitconfig'
-    ALIASES = '.gitaliseses'
+    ALIASES = '.gitaliases'
     IGNORE = '.gitignore'
     LOCAL  = '.gitconfig_local'
     OS     = '.gitconfig_os'
