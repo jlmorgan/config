@@ -9,6 +9,7 @@ set nobackup        " Disable back ups since we have source control
 set nocompatible    " Disable compatibility mode
 set noswapfile      " Disable swap file
 set shell=/bin/bash " Shell
+set tw=120          " Text width
 syntax on           " Syntax highlighting
 
 " Searching
