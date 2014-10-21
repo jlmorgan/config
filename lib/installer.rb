@@ -74,7 +74,7 @@ class Installer
 
       if OS.mac?
         link(Git::ALIASES, Dest::Git::ALIASES)
-        link(Git::UNIX, Dest::Git::OS)
+        link(Git::OSX, Dest::Git::OS)
         link(Git::BASE, Dest::Git::CONFIG)
         ignores.push(
           Git::Ignore::OSX,

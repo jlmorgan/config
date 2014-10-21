@@ -14,6 +14,7 @@ module Source
   module Git
     BASE = '/git/base.gitconfig'
     ALIASES = '/git/default.gitaliases'
+    OSX = '/git/osx.gitconfig'
     TEMPLATE = '/git/default.gittemplate'
     UNIX = '/git/unix.gitconfig'
     WIN = '/git/win.gitconfig'
